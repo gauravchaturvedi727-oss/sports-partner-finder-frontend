@@ -1,0 +1,729 @@
+/* =========================================
+   MY PLAY SESSIONS PAGE
+========================================= */
+
+.my-play-page {
+    min-height: calc(100vh - 70px);
+
+    padding: 42px 6% 70px;
+
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 8% 8%,
+            rgba(37, 99, 235, 0.14),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 92% 75%,
+            rgba(124, 58, 237, 0.12),
+            transparent 30%
+        ),
+        #060b16;
+
+    color: white;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.my-play-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+
+.my-play-badge {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(59, 130, 246, 0.1);
+
+    border: 1px solid
+        rgba(59, 130, 246, 0.2);
+
+    color: #60a5fa;
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+}
+
+
+.my-play-header h1 {
+    margin: 12px 0 7px;
+
+    color: white;
+
+    font-size: 36px;
+
+    font-weight: 900;
+}
+
+
+.my-play-header p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   BROWSE BUTTON
+========================================= */
+
+.browse-games-btn {
+    padding: 12px 17px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.browse-games-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(37, 99, 235, 0.25);
+}
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.my-play-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+.my-play-stat {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    border-radius: 13px;
+
+    background:
+        rgba(15, 23, 42, 0.78);
+
+    border: 1px solid
+        rgba(148, 163, 184, 0.08);
+}
+
+
+.my-play-stat > span {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background:
+        rgba(37, 99, 235, 0.1);
+
+    font-size: 16px;
+}
+
+
+.my-play-stat small {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #64748b;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.7px;
+}
+
+
+.my-play-stat strong {
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 900;
+}
+
+
+/* =========================================
+   SESSION LIST
+========================================= */
+
+.my-play-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================
+   SESSION CARD
+========================================= */
+
+.my-session-card {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17, 28, 50, 0.96),
+            rgba(8, 15, 29, 0.98)
+        );
+
+    border: 1px solid
+        rgba(96, 165, 250, 0.1);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.my-session-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 3px;
+    height: 100%;
+
+    border-radius: 15px 0 0 15px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #2563eb,
+            #7c3aed
+        );
+}
+
+
+.my-session-card:hover {
+    transform: translateY(-2px);
+
+    border-color:
+        rgba(59, 130, 246, 0.25);
+
+    box-shadow:
+        0 15px 35px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.my-session-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 14px;
+
+    background:
+        rgba(37, 99, 235, 0.11);
+
+    border: 1px solid
+        rgba(59, 130, 246, 0.12);
+
+    font-size: 23px;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.my-session-main {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.my-session-title-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 5px;
+}
+
+
+.my-session-title-row h2 {
+    margin: 0;
+
+    overflow: hidden;
+
+    color: #f8fafc;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.my-session-scheduled,
+.my-session-completed,
+.my-session-cancelled {
+    padding: 5px 8px;
+
+    border-radius: 20px;
+
+    font-size: 7px;
+
+    font-weight: 900;
+
+    text-transform: capitalize;
+
+    white-space: nowrap;
+}
+
+
+.my-session-scheduled {
+    background:
+        rgba(34, 197, 94, 0.08);
+
+    color: #4ade80;
+}
+
+
+.my-session-completed {
+    background:
+        rgba(59, 130, 246, 0.09);
+
+    color: #60a5fa;
+}
+
+
+.my-session-cancelled {
+    background:
+        rgba(239, 68, 68, 0.08);
+
+    color: #f87171;
+}
+
+
+/* =========================================
+   GAME
+========================================= */
+
+.my-session-game {
+    display: inline-block;
+
+    margin-bottom: 9px;
+
+    color: #a78bfa;
+
+    font-size: 9px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   META
+========================================= */
+
+.my-session-meta {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    color: #64748b;
+
+    font-size: 9px;
+}
+
+
+.my-session-meta span {
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   ROLE
+========================================= */
+
+.my-session-role {
+    flex-shrink: 0;
+}
+
+
+.organizer-role,
+.player-role {
+    display: inline-block;
+
+    padding: 7px 9px;
+
+    border-radius: 8px;
+
+    font-size: 8px;
+
+    font-weight: 800;
+}
+
+
+.organizer-role {
+    background:
+        rgba(124, 58, 237, 0.09);
+
+    color: #a78bfa;
+}
+
+
+.player-role {
+    background:
+        rgba(37, 99, 235, 0.09);
+
+    color: #60a5fa;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.my-session-arrow {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background:
+        rgba(148, 163, 184, 0.06);
+
+    color: #64748b;
+
+    font-size: 16px;
+
+    transition: 0.2s ease;
+}
+
+
+.my-session-card:hover .my-session-arrow {
+    background:
+        rgba(37, 99, 235, 0.1);
+
+    color: #60a5fa;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.my-play-empty {
+    max-width: 520px;
+
+    margin: 60px auto;
+
+    padding: 50px 25px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background:
+        rgba(15, 23, 42, 0.65);
+
+    border: 1px solid
+        rgba(96, 165, 250, 0.1);
+}
+
+
+.my-play-empty > div {
+    margin-bottom: 12px;
+
+    font-size: 48px;
+}
+
+
+.my-play-empty h2 {
+    margin: 0 0 8px;
+
+    color: white;
+
+    font-size: 21px;
+}
+
+
+.my-play-empty p {
+    margin: 0 0 22px;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+.my-play-empty button {
+    padding: 11px 18px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.my-play-loading {
+    min-height: 70vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.my-play-loading > div {
+    margin-bottom: 10px;
+
+    font-size: 42px;
+}
+
+
+.my-play-loading h2 {
+    margin: 0 0 6px;
+
+    color: white;
+
+    font-size: 20px;
+}
+
+
+.my-play-loading p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .my-play-stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .my-play-page {
+        padding: 30px 18px 50px;
+    }
+
+
+    .my-play-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .browse-games-btn {
+        width: 100%;
+    }
+
+
+    .my-session-card {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .my-session-main {
+        width: calc(100% - 70px);
+    }
+
+
+    .my-session-role {
+        margin-left: 67px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .my-play-header h1 {
+        font-size: 29px;
+    }
+
+
+    .my-play-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .my-play-stat {
+        padding: 12px;
+    }
+
+
+    .my-session-title-row {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+
+    .my-session-meta {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 6px;
+    }
+
+
+    .my-session-role {
+        margin-left: 0;
+    }
+
+
+    .my-session-arrow {
+        display: none;
+    }
+
+}

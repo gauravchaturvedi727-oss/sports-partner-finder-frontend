@@ -1,0 +1,327 @@
+.home-page {
+    min-height: 100vh;
+    background: #f8fafc;
+    color: #111827;
+}
+
+
+/* HERO */
+
+.hero-section {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 70px 10%;
+
+    background:
+        radial-gradient(
+            circle at 85% 50%,
+            #2563eb 0,
+            #1e3a8a 35%,
+            #0f172a 75%
+        );
+
+    color: white;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 58px;
+    line-height: 1.08;
+
+    margin: 0 0 25px;
+}
+
+.hero-content h1 span {
+    display: block;
+    color: #60a5fa;
+}
+
+.hero-content p {
+    max-width: 570px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #dbeafe;
+
+    margin-bottom: 32px;
+}
+
+.find-btn {
+    border: none;
+
+    padding: 15px 28px;
+
+    border-radius: 10px;
+
+    background: white;
+    color: #1d4ed8;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.find-btn:hover {
+    transform: translateY(-2px);
+}
+
+.hero-ball {
+    font-size: 190px;
+
+    filter: drop-shadow(
+        0 25px 25px rgba(0, 0, 0, 0.25)
+    );
+
+    animation: floatBall 3s ease-in-out infinite;
+}
+
+@keyframes floatBall {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-18px) rotate(8deg);
+    }
+}
+
+
+/* SPORTS */
+
+.sports-section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.sports-section h2,
+.how-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+.sports-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 18px;
+}
+
+.sport-card {
+    background: white;
+
+    padding: 28px 15px;
+
+    border-radius: 16px;
+
+    border: 1px solid #e5e7eb;
+
+    transition: 0.25s;
+}
+
+.sport-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.sport-card span {
+    font-size: 42px;
+}
+
+.sport-card h3 {
+    margin: 15px 0 8px;
+}
+
+.sport-card p {
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* HOW IT WORKS */
+
+.how-section {
+    padding: 70px 10%;
+
+    background: white;
+
+    text-align: center;
+}
+
+.steps {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+
+    margin-top: 45px;
+}
+
+.step {
+    padding: 25px;
+}
+
+.step > div {
+    width: 55px;
+    height: 55px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #dbeafe;
+    color: #2563eb;
+
+    font-weight: 800;
+}
+
+.step h3 {
+    margin: 18px 0 8px;
+}
+
+.step p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+
+/* BOTTOM CTA */
+
+.bottom-cta {
+    margin: 60px 8%;
+
+    padding: 55px 30px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background: #1e3a8a;
+
+    color: white;
+}
+
+.bottom-cta h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.bottom-cta button {
+    border: none;
+
+    padding: 14px 25px;
+
+    border-radius: 9px;
+
+    background: white;
+    color: #1e3a8a;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .sports-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 46px;
+    }
+
+    .hero-ball {
+        font-size: 130px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+
+        padding: 55px 25px;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-ball {
+        font-size: 100px;
+        margin-top: 30px;
+    }
+
+    .sports-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .sports-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+}

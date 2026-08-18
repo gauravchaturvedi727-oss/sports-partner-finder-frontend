@@ -1,0 +1,767 @@
+/* =========================================
+   SPORTS PARTNER - REGISTER
+   DARK SPORTS ARENA THEME
+========================================= */
+
+.register-page {
+    position: relative;
+
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+
+    background: #060b16;
+
+    color: white;
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   GAMING GRID BACKGROUND
+========================================= */
+
+.register-page::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px
+        );
+
+    background-size: 45px 45px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   LEFT SECTION
+========================================= */
+
+.left-side {
+    position: relative;
+
+    z-index: 2;
+
+    width: 50%;
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 55px;
+
+    box-sizing: border-box;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at 20% 25%,
+            rgba(37, 99, 235, 0.22),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(124, 58, 237, 0.15),
+            transparent 35%
+        ),
+        #07101f;
+
+    border-right:
+        1px solid
+        rgba(96, 165, 250, 0.12);
+
+    overflow: hidden;
+}
+
+
+/* LEFT SIDE GLOW */
+
+.left-side::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    top: -130px;
+    left: -120px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    opacity: 0.12;
+
+    filter: blur(60px);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 520px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: 900;
+
+    box-shadow:
+        0 15px 35px
+        rgba(37, 99, 235, 0.35);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.content h1 {
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    font-weight: 900;
+
+    letter-spacing: -1.5px;
+}
+
+
+.content h1 span {
+    background:
+        linear-gradient(
+            90deg,
+            #3b82f6,
+            #38bdf8,
+            #a78bfa
+        );
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.content p {
+    margin-bottom: 35px;
+
+    color: #94a3b8;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SPORTS LIST
+========================================= */
+
+.sports-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.sports-list span {
+    padding: 10px 16px;
+
+    background:
+        rgba(15, 23, 42, 0.75);
+
+    border:
+        1px solid
+        rgba(96, 165, 250, 0.16);
+
+    border-radius: 25px;
+
+    color: #cbd5e1;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    box-shadow:
+        inset 0 0 15px
+        rgba(37, 99, 235, 0.03);
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.sports-list span:hover {
+    transform: translateY(-3px);
+
+    background:
+        rgba(37, 99, 235, 0.15);
+
+    border-color:
+        rgba(59, 130, 246, 0.45);
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px
+        rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================
+   RIGHT SECTION
+========================================= */
+
+.right-side {
+    position: relative;
+
+    z-index: 2;
+
+    width: 50%;
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(124, 58, 237, 0.13),
+            transparent 35%
+        );
+}
+
+
+/* =========================================
+   FORM CONTAINER
+========================================= */
+
+.form-container {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 520px;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17, 28, 50, 0.98),
+            rgba(8, 15, 29, 0.98)
+        );
+
+    border:
+        1px solid
+        rgba(96, 165, 250, 0.17);
+
+    box-shadow:
+        0 25px 70px
+        rgba(0, 0, 0, 0.55),
+
+        0 0 35px
+        rgba(37, 99, 235, 0.07);
+
+    overflow: hidden;
+}
+
+
+/* CARD TOP GLOW */
+
+.form-container::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -100px;
+    right: -70px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    opacity: 0.18;
+
+    filter: blur(8px);
+}
+
+
+/* CARD BOTTOM NEON */
+
+.form-container::after {
+    content: "";
+
+    position: absolute;
+
+    left: 30px;
+    right: 30px;
+
+    bottom: 0;
+
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #2563eb,
+            #38bdf8,
+            #7c3aed,
+            transparent
+        );
+}
+
+
+/* =========================================
+   FORM HEADING
+========================================= */
+
+.form-container h2 {
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0 0 8px;
+
+    color: #ffffff;
+
+    font-size: 30px;
+
+    font-weight: 900;
+}
+
+
+.form-container h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+
+    height: 4px;
+
+    margin-top: 10px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #38bdf8
+        );
+
+    box-shadow:
+        0 0 15px
+        rgba(37, 99, 235, 0.7);
+}
+
+
+.form-container > p {
+    position: relative;
+
+    z-index: 2;
+
+    margin: 15px 0 28px;
+
+    color: #64748b;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-container form {
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   INPUT BOX
+========================================= */
+
+.input-box {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.input-box.full {
+    grid-column: 1 / -1;
+}
+
+
+.input-box label {
+    font-size: 12px;
+
+    font-weight: 700;
+
+    color: #cbd5e1;
+}
+
+
+/* =========================================
+   INPUT FIELD
+========================================= */
+
+.input-field {
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 14px;
+
+    border:
+        1px solid
+        rgba(148, 163, 184, 0.16);
+
+    border-radius: 10px;
+
+    background:
+        rgba(15, 23, 42, 0.85);
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.input-field svg {
+    color: #60a5fa;
+
+    flex-shrink: 0;
+}
+
+
+.input-field:focus-within {
+    border-color: #3b82f6;
+
+    background:
+        rgba(15, 23, 42, 1);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(59, 130, 246, 0.10),
+
+        0 0 18px
+        rgba(37, 99, 235, 0.10);
+}
+
+
+/* INPUT + SELECT */
+
+.input-field input,
+.input-field select {
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 13px;
+}
+
+
+.input-field input::placeholder {
+    color: #475569;
+}
+
+
+.input-field select {
+    cursor: pointer;
+}
+
+
+.input-field select option {
+    background: #0f172a;
+
+    color: white;
+}
+
+
+/* =========================================
+   CREATE ACCOUNT BUTTON
+========================================= */
+
+.form-container form button {
+    grid-column: 1 / -1;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(37, 99, 235, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.form-container form button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(37, 99, 235, 0.40);
+}
+
+
+.form-container form button:active {
+    transform: translateY(0);
+}
+
+
+.form-container form button:disabled {
+    background: #334155;
+
+    cursor: not-allowed;
+
+    opacity: 0.6;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================
+   LOGIN LINK
+========================================= */
+
+.login-text {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    margin-top: 22px;
+
+    font-size: 13px;
+
+    color: #64748b;
+}
+
+
+.login-text a {
+    margin-left: 5px;
+
+    color: #60a5fa;
+
+    font-weight: 800;
+
+    text-decoration: none;
+}
+
+
+.login-text a:hover {
+    color: #93c5fd;
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .register-page {
+        flex-direction: column;
+
+        min-height: 100vh;
+
+        height: auto;
+
+        overflow-y: auto;
+    }
+
+    .left-side {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 45px 25px;
+    }
+
+    .right-side {
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 35px 20px;
+    }
+
+    .content h1 {
+        font-size: 38px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .form-container {
+        padding: 25px 20px;
+    }
+
+    .form-container form {
+        grid-template-columns: 1fr;
+    }
+
+    .input-box.full {
+        grid-column: auto;
+    }
+
+    .content h1 {
+        font-size: 32px;
+    }
+
+    .sports-list span {
+        font-size: 12px;
+
+        padding: 8px 12px;
+    }
+}
