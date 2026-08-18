@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:3000/api"
+    baseURL: "https://sports-partner-finder-backend-1.onrender.com"
 });
 
 api.interceptors.request.use((config) =>{
