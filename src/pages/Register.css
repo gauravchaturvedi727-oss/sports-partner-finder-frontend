@@ -1,8 +1,3 @@
-/* =========================================
-   SPORTS PARTNER - REGISTER
-   DARK SPORTS ARENA THEME
-========================================= */
-
 .register-page {
     position: relative;
 
@@ -25,11 +20,6 @@
 
     overflow: hidden;
 }
-
-
-/* =========================================
-   GAMING GRID BACKGROUND
-========================================= */
 
 .register-page::before {
     content: "";
@@ -54,10 +44,6 @@
     pointer-events: none;
 }
 
-
-/* =========================================
-   LEFT SECTION
-========================================= */
 
 .left-side {
     position: relative;
@@ -121,11 +107,6 @@
     filter: blur(60px);
 }
 
-
-/* =========================================
-   CONTENT
-========================================= */
-
 .content {
     position: relative;
 
@@ -136,10 +117,6 @@
     max-width: 520px;
 }
 
-
-/* =========================================
-   LOGO
-========================================= */
 
 .logo {
     width: 65px;
@@ -176,11 +153,6 @@
         rgba(255, 255, 255, 0.15);
 }
 
-
-/* =========================================
-   MAIN HEADING
-========================================= */
-
 .content h1 {
     margin: 0 0 25px;
 
@@ -213,10 +185,6 @@
 }
 
 
-/* =========================================
-   DESCRIPTION
-========================================= */
-
 .content p {
     margin-bottom: 35px;
 
@@ -227,10 +195,6 @@
     line-height: 1.8;
 }
 
-
-/* =========================================
-   SPORTS LIST
-========================================= */
 
 .sports-list {
     display: flex;
@@ -287,10 +251,6 @@
 }
 
 
-/* =========================================
-   RIGHT SECTION
-========================================= */
-
 .right-side {
     position: relative;
 
@@ -318,10 +278,6 @@
         );
 }
 
-
-/* =========================================
-   FORM CONTAINER
-========================================= */
 
 .form-container {
     position: relative;
@@ -406,11 +362,6 @@
         );
 }
 
-
-/* =========================================
-   FORM HEADING
-========================================= */
-
 .form-container h2 {
     position: relative;
 
@@ -463,10 +414,6 @@
 }
 
 
-/* =========================================
-   FORM
-========================================= */
-
 .form-container form {
     position: relative;
 
@@ -479,10 +426,6 @@
     gap: 18px;
 }
 
-
-/* =========================================
-   INPUT BOX
-========================================= */
 
 .input-box {
     display: flex;
@@ -506,10 +449,6 @@
     color: #cbd5e1;
 }
 
-
-/* =========================================
-   INPUT FIELD
-========================================= */
 
 .input-field {
     height: 48px;
@@ -599,10 +538,6 @@
 }
 
 
-/* =========================================
-   CREATE ACCOUNT BUTTON
-========================================= */
-
 .form-container form button {
     grid-column: 1 / -1;
 
@@ -666,9 +601,6 @@
 }
 
 
-/* =========================================
-   LOGIN LINK
-========================================= */
 
 .login-text {
     position: relative;
@@ -702,10 +634,6 @@
     text-decoration: underline;
 }
 
-
-/* =========================================
-   RESPONSIVE
-========================================= */
 
 @media (max-width: 900px) {
 
@@ -764,4 +692,100 @@
 
         padding: 8px 12px;
     }
+}
+
+
+.checkbox-group {
+    grid-column: 1 / -1;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px 18px;
+
+    margin-top: 2px;
+}
+
+.checkbox-group label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #cbd5e1;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+.checkbox-group label:hover {
+    color: #ffffff;
+}
+
+.checkbox-group input[type="checkbox"] {
+    appearance: none;
+
+    -webkit-appearance: none;
+
+    width: 17px;
+
+    height: 17px;
+
+    margin: 0;
+
+    border: 1.5px solid #475569;
+
+    border-radius: 5px;
+
+    background: #0f172a;
+
+    cursor: pointer;
+
+    display: grid;
+
+    place-content: center;
+
+    transition: all 0.2s ease;
+}
+
+.checkbox-group input[type="checkbox"]::before {
+    content: "";
+
+    width: 8px;
+
+    height: 5px;
+
+    border-left: 2px solid white;
+
+    border-bottom: 2px solid white;
+
+    transform: rotate(-45deg) scale(0);
+
+    margin-top: -2px;
+
+    transition: transform 0.15s ease;
+}
+
+.checkbox-group input[type="checkbox"]:checked {
+    background: #2563eb;
+
+    border-color: #3b82f6;
+
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.35);
+}
+
+.checkbox-group input[type="checkbox"]:checked::before {
+    transform: rotate(-45deg) scale(1);
+}
+
+.checkbox-group input[type="checkbox"]:hover {
+    border-color: #60a5fa;
 }
